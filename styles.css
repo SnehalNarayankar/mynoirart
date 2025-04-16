@@ -1,0 +1,293 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background1.jpeg'); /* Background image for the whole page */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Modal Content (Zoomed Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Limit the zoom */
+    max-height: 80%;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.zoomable {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.zoomable:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Modal (Background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999; /* Display above everything */
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+}
+
+
+/* Header Section Styling */
+header {
+    background-color: #ffffff;
+    color: #F4C6D8; /* Baby pink text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #F4C6D8; /* Baby pink */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section Styling */
+#home {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+/* Image Below Home Section */
+.home-image {
+    margin-top: 30px;
+}
+
+.home-image img {
+    max-width: 40%; /* Adjust image size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Message */
+.welcome-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.welcome-message h3 {
+    font-size: 1.5rem;
+    color: #F4C6D8; /* Baby pink */
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* About Me Section Styling */
+#about-me {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+#about-me h2 {
+    font-size: 2rem;
+}
+
+#about-me p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Art Gallery Section Styling */
+#art-gallery {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+#art-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Item Layout */
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    gap: 20px;
+}
+
+/* When image is on the left */
+.portfolio-item.left {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+/* When image is on the right */
+.portfolio-item.right {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+/* Styling for the images inside the portfolio item */
+.portfolio-item img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    max-height: 300px;
+}
+
+/* Title and Description outside the layout box */
+.portfolio-item .title-description {
+    text-align: center;
+    margin-bottom: 20px; /* Add space between title/description and layout box */
+}
+
+.portfolio-item .title-description h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.portfolio-item .title-description p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Text Styling inside the layout box */
+.portfolio-item .text {
+    text-align: left;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover Effect */
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form Styling */
+#contact {
+    padding: 40px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #F4C6D8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F1A7C1;
+}
+
+/* Responsive Design: Stack items on smaller screens */
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .portfolio-item img {
+        max-width: 80%; /* Adjust image size on smaller screens */
+    }
+
+    .portfolio-item .text {
+        margin-top: 10px; /* Add space between the image and text */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically on smaller screens */
+        margin: 10px 0;
+    }
+}
