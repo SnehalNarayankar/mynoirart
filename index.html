@@ -5,163 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Art Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "hgqwsAWF6LXR53eDi",
-      });
-   })();
-</script>
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "hgqwsAWF6LXR53eDi",
+          });
+       })();
+    </script>
 </head>
 <body>
-    <!-- Lightbox Modal for Zoomed Image -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="fullImage">
-        <div id="caption"></div>
+
+<!-- Lightbox Modal for Zoomed Image -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullImage">
+    <div id="caption"></div>
+</div>
+
+<!-- Header Section -->
+<header>
+    <h1>MY NOIR ART</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#art-gallery">Art Gallery</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+    <h2>Home</h2>
+    <div class="home-image">
+        <img src="images/image10.jpg" alt="Artwork Example">
+    </div>
+    <div class="welcome-message">
+        <h3>Welcome to My Creative World!</h3>
+        <p>Welcome to my art portfolio. I specialize in creating stunning charcoal sketches and vibrant artworks that express the essence of my subjects. Explore my collection below!</p>
+    </div>
+</section>
+
+<!-- Art Gallery Section -->
+<section id="art-gallery">
+    <h2>My Artwork</h2>
+
+    <div class="portfolio-item left">
+        <a href="artwork1.html">
+            <img src="images/image1.jpg" alt="Artwork 1" class="zoomable">
+        </a>
+        <div class="text">
+            <h3>Title: The Voyage</h3>
+            <p>This meticulously detailed pencil sketch captures the grandeur of a towering ship braving turbulent seas under a dramatic, cloud-filled sky...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
+            </div>    
+        </div>
     </div>
 
-    <!-- Header Section -->
-    <header>
-        <h1>MY NOIR ART</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#art-gallery">Art Gallery</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Home</h2>
-        <!-- Image Below Home Section -->
-        <div class="home-image">
-            <img src="images/image10.jpg" alt="Artwork Example">
-        </div>
-
-        <!-- Welcome Message -->
-        <div class="welcome-message">
-            <h3>Welcome to My Creative World!</h3>
-            <p>Welcome to my art portfolio. I specialize in creating stunning charcoal sketches and vibrant artworks that express the essence of my subjects. Explore my collection below!</p>
-        </div>
-    </section>
-
-    <!-- Art Gallery Section -->
-    <section id="art-gallery">
-        <h2>My Artwork</h2>
-
-        <!-- Artwork Items -->
-    <a href="artwork1.html" class="portfolio-item left">
-        <div class="portfolio-item left">
-            <img src="images/image1.jpg" alt="Artwork 1">
-            <div class="text">
-                <h3>Title: The Voyage</h3>
-                <p>This meticulously detailed pencil sketch captures the grandeur of a towering ship braving turbulent seas under a dramatic, cloud-filled sky. With intricate rigging, billowing sails, and dynamic shading, the artwork evokes the spirit of adventure, resilience, and the timeless allure of oceanic exploration.</p>
+    <div class="portfolio-item right">
+        <a href="artwork2.html">
+            <img src="images/image2.jpg" alt="Artwork 2" class="zoomable">
+        </a>
+        <div class="text">
+            <h3>Title: Wings of Resilience</h3>
+            <p>This evocative pencil sketch portrays a chained angel, her magnificent wings spread wide...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
             </div>
         </div>
-    </a>
-    <a href="artwork2.html" class="portfolio-item left">
-        <div class="portfolio-item right">
-            <img src="images/image2.jpg" alt="Artwork 2">
-            <div class="text">
-                <h3>Title: Wings of Resilience</h3>
-                <p>  This evocative pencil sketch portrays a chained angel, her magnificent wings spread wide, symbolizing endurance and hope. Set against a dark, desolate backdrop, the artwork captures the essence of resilience, reflecting quiet strength in the face of adversity.</p>
-            </div>
-        </div>
-    </a>
-    <a href="artwork3.html" class="portfolio-item left">
-        <img src="images/image3.jpg" alt="Artwork 3">
+    </div>
+
+    <div class="portfolio-item left">
+        <a href="artwork3.html">
+            <img src="images/image3.jpg" alt="Artwork 3" class="zoomable">
+        </a>
         <div class="text">
             <h3>Title: Speed Unleashed</h3>
-            <p>This hyper-realistic pencil sketch captures the sleek elegance and raw power of a sports car, with remarkable attention to detail. From the glinting tail lights to the glossy reflections on the bodywork, every curve and contour exudes speed, precision, and luxury. A stunning tribute to automotive excellence. </p>
+            <p>This hyper-realistic pencil sketch captures the sleek elegance and raw power of a sports car...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
+            </div>
         </div>
-    </a>
-    
-    <a href="artwork4.html" class="portfolio-item right">
-        <img src="images/image4.jpg" alt="Artwork 4">
+    </div>
+
+    <div class="portfolio-item right">
+        <a href="artwork4.html">
+            <img src="images/image4.jpg" alt="Artwork 4" class="zoomable">
+        </a>
         <div class="text">
             <h3>Title: Deadly Elegance</h3>
-            <p>This intricate pencil sketch highlights the stunning texture of a snake’s scales with lifelike detail. Every ridge and curve is meticulously rendered, showcasing the reptile’s natural elegance, strength, and predatory grace. A striking representation of nature’s untamed beauty. </p>
+            <p>This intricate pencil sketch highlights the stunning texture of a snake’s scales with lifelike detail...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
+            </div>
         </div>
-    </a>
-    
-    <a href="artwork5.html" class="portfolio-item left">
-        <img src="images/image5.jpg" alt="Artwork 5">
+    </div>
+
+    <div class="portfolio-item left">
+        <a href="artwork5.html">
+            <img src="images/image5.jpg" alt="Artwork 5" class="zoomable">
+        </a>
         <div class="text">
             <h3>Title: Revved Up Spirit</h3>
-            <p>This dynamic pencil sketch captures the raw, unfiltered essence of a classic muscle car against an urban backdrop. The sleek lines, deep shadows, and gleaming headlights exude dominance and power, symbolizing speed, strength, and the spirit of the open road.</p>
+            <p>This dynamic pencil sketch captures the raw, unfiltered essence of a classic muscle car against an urban backdrop...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
+            </div>
         </div>
-    </a>
-    
-    <a href="artwork6.html" class="portfolio-item right">
-        <img src="images/image6.jpg" alt="Artwork 6">
+    </div>
+
+    <div class="portfolio-item right">
+        <a href="artwork6.html">
+            <img src="images/image6.jpg" alt="Artwork 6" class="zoomable">
+        </a>
         <div class="text">
             <h3>Title: Whispers of the Forest</h3>
-            <p>This exquisite pencil sketch unveils a mesmerizing perspective where the delicate veins of a leaf form a natural window, framing a serene forest scene. Three majestic stags, standing tall with their antlers raised high, symbolize grace, strength, and harmony with nature. The interplay of light and shadow beautifully conveys a quiet, untouched wilderness.</p>
+            <p>This exquisite pencil sketch unveils a mesmerizing perspective where the delicate veins of a leaf form a natural window...</p>
+            <div class="like-section">
+                <button class="like-button">❤️ Like</button>
+                <span class="like-count">0</span>
+            </div>
         </div>
-    </a>
-    
-
-    </section>
+    </div>
+</section>
 
 
 
-    <!-- About Me Section -->
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>I'm an artist specializing in charcoal sketching. I love using charcoal to capture emotion, light, and shadow, creating detailed and expressive pieces. Each sketch reflects my journey and personal expression. Thank you for visiting my portfolio!</p>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="form-message"></p>
-    </section>
 
-    <!-- Visitor Counter Section -->
-    <section id="visitor-counter">
-        <h3>Total Visitors:</h3>
-        <p id="visitor-count" style="font-size: 20px; font-weight: bold;"></p>
-    </section>
-    
 
-    <!-- Include the JavaScript for EmailJS -->
-    <script src="script.js"></script>
 
-    <script>
-    // Fetch visitor count from CountAPI
-    fetch('https://api.countapi.xyz/hit/myartportfolio-visits')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('visitor-count').innerText = data.value;
-      })
-      .catch(err => {
-        console.error('Visitor counter failed to load', err);
-        document.getElementById('visitor-count').innerText = "Unable to load count.";
-      });
-</script>
-   
 
+
+
+
+<!-- About Me Section -->
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>I'm an artist specializing in charcoal sketching. I love using charcoal to capture emotion, light, and shadow, creating detailed and expressive pieces...</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="form-message"></p>
+</section>
+
+<!-- Include the JavaScript for EmailJS and Like buttons -->
+<script src="script.js"></script>
 
 </body>
 </html>

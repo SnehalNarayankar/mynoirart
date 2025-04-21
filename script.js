@@ -58,3 +58,13 @@ const closeBtn = document.querySelector(".close");
 closeBtn.addEventListener("click", () => {
     modal.style.display = "none";  // Hide modal
 });
+
+// Handle Like Buttons
+document.querySelectorAll('.like-button').forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent triggering image zoom
+        const countSpan = button.nextElementSibling;
+        let count = parseInt(countSpan.textContent, 10);
+        countSpan.textContent = count + 1;
+    });
+});
